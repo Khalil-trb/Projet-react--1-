@@ -9,18 +9,18 @@ function UserName() {
   return (
     <div>
       <Link to="/userList">Retour</Link>
-
-      {user ? (
+        {user ? (
         <div>
           <img src={user.image} alt={user.username} />
-          <h1>{user.username}</h1>
-          <p>{user.firstName} {user.lastName}</p>
-        </div>
-      ) : (
+             <h1>{user.username}</h1>
+             <p>{user.firstName} {user.lastName}</p>
+      </div>
+      ):
+      (
         <p>Utilisateur introuvable.</p>
-      )}
-    </div>
-  );
+      )
+  }
+  </div>
+);
 }
-
 export default UserName;
