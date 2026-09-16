@@ -7,6 +7,8 @@ import UserList from "./pages/UserList.tsx";
 import Header from "./components/header.tsx";
 import { Outlet } from 'react-router-dom';
 import UserName from "./pages/Username.tsx";
+import RecipeDetail from "./pages/Recipe.tsx";
+import Recipe from "./pages/Recipe.tsx";
 
 const Layout = () => (
   <>
@@ -31,6 +33,10 @@ const router = createBrowserRouter([
         path: "/user/:username",
         element: <UserName />,
       },
+      {
+        path: "/recipe/:id",
+        element: <Recipe/>
+      }
   ]
  }
 ]);

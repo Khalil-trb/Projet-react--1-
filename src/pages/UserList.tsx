@@ -9,7 +9,7 @@ const User =usersData.users;
     {User.map((user) =>
     <div key={user.id}>
               <img src={user.image} alt={user.username} />
-             <p>name : <Link to={`/user/${user.username}`}>{user.username}</Link></p>
+             <p>User name : {user.username}</p>
       </div>
     )
 }
