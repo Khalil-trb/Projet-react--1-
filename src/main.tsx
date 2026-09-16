@@ -7,8 +7,9 @@ import UserList from "./pages/UserList.tsx";
 import Header from "./components/header.tsx";
 import { Outlet } from 'react-router-dom';
 import UserName from "./pages/Username.tsx";
-import RecipeDetail from "./pages/Recipe.tsx";
 import Recipe from "./pages/Recipe.tsx";
+import Login from "./pages/login.tsx";
+import Profile from "./pages/profil.tsx";
 
 const Layout = () => (
   <>
@@ -36,11 +37,19 @@ const router = createBrowserRouter([
       {
         path: "/recipe/:id",
         element: <Recipe/>
-      }
-  ]
- }
+      },
+      {
+        path: "/login",
+        element: <Login/>
+      },
+      {
+        path: "/profile/:username",
+        element: <Profile/>,
+      },
+    ],
+  }
+ 
 ]);
-
 createRoot(document.getElementById('root')!).render(
   <RouterProvider router={router} />
 )
