@@ -9,7 +9,6 @@ body {
   color: #333;
 }
 
-/* Header / navigation */
 .Header ul {
   display: flex;
   gap: 20px;
@@ -29,7 +28,7 @@ body {
   text-decoration: underline;
 }
 
-/* Titres */
+
 h1 {
   text-align: center;
   margin: 20px 0;
@@ -39,7 +38,7 @@ h2 {
   margin-top: 20px;
 }
 
-/* Grille de recettes et utilisateurs */
+
 .recipe-grid,
 .user-grid {
   display: flex;
@@ -49,7 +48,7 @@ h2 {
   justify-content: center;
 }
 
-/* Cartes */
+
 .recipe-card,
 .user-card {
   background-color: white;
@@ -77,7 +76,7 @@ h2 {
   margin-bottom: 10px;
 }
 
-/* Page détail recette */
+
 .recipe-detail-image,
 .user-detail-image {
   display: block;
@@ -86,7 +85,7 @@ h2 {
   border-radius: 8px;
 }
 
-/* Formulaire de connexion */
+
 form {
   display: flex;
   flex-direction: column;
@@ -125,7 +124,7 @@ form button:hover {
   text-align: center;
 }
 
-/* Page 404 */
+
 .not-found {
   text-align: center;
   padding: 60px 20px;
