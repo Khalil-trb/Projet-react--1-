@@ -1,8 +1,9 @@
-import { useParams } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import usersData from '../data/users.json';
 
 function Profile() {
-  const { username } = useParams<{ username: string }>();
+  const location = useLocation();
+  const username = (location.state as { username?: string } | null)?.username;
 
   const user = usersData.users.filter((u) => u.username === username)[0];
 
@@ -24,7 +25,7 @@ function Profile() {
           <p>Poste : {user.company.title}</p>
         </div>
       ) : (
-        <p>Profil introuvable.</p>
+        <p> Le Profil introuvable.</p>
       )}
     </div>
   );

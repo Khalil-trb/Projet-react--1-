@@ -16,7 +16,7 @@ function Login() {
     )[0];
 
    if (found) {
-  navigate(`/profile/${found.username}`);
+  navigate('/profile/', { state: { username: found.username } });
 } else {
   setError('Identifiants incorrects.');
 }};
